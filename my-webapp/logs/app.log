@@ -1,0 +1,10 @@
+2024-03-15 10:30:00 [INFO] Application started successfully
+2024-03-15 10:30:01 [INFO] Database connection established
+2024-03-15 10:45:23 [INFO] User login: john@example.com
+2024-03-15 11:20:15 [INFO] New user registered: alice@example.com
+2024-03-15 11:35:42 [WARN] Failed login attempt from IP: 192.168.1.100
+2024-03-15 12:10:08 [INFO] Backup process started
+2024-03-15 12:10:25 [INFO] Backup completed successfully
+2024-03-15 14:22:33 [ERROR] Database connection timeout
+2024-03-15 14:22:40 [INFO] Database connection restored
+2024-03-15 16:45:12 [INFO] User logout: john@example.com
