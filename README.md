@@ -3,9 +3,9 @@
 
 ## Profile
 
-NRP: ...
+NRP: 5054251023
 
-Name: ...
+Name: Zico Diego Rio Ramadhonny
 
 ## Objective
 Create two bash scripts that implement a simple backup and restore system for a web application.
