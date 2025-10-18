@@ -14,7 +14,15 @@ You would need a C++ compiler, preferably MinGW-w64, and a terminal.
 ```bash
 git clone --single-branch --branch Day-2 https://github.com/ZicoDiegoRR/Abhinara-1_Internship.git
 ```
-- **Second**: Run the following command to change the working directory.
+- **Third**: Run the following command to change the working directory.
 ```bash
 cd <path/to/repo> # Replace the path to the actual path of the cloned repository
 ```
+- **Fourth**: Depending on your C++ compiler, compile the code and include every source file (`.cpp`).
+              For MinGW compiler, you can run the following command:
+```bash
+g++ main.cpp lib/animals/animals.cpp lib/animals/types/all.cpp lib/player/stats.cpp lib/weapons/all_rifle.cpp -o output
+```
+- **Fifth**: Run the compiled program and enjoy.
+
+## Thank you for reading this repository. If you like, you can send a feedback so that I can improve to become better. Peace out!
