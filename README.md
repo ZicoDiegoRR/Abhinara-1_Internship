@@ -11,10 +11,10 @@ NRP : 5054251023
 You would need a C++ compiler, preferably MinGW-w64, and a terminal.
 - **First**: Open a terminal.
 - **Second**: Clone this repository.
-```git
+```bash
 git clone --single-branch --branch Day-2 https://github.com/ZicoDiegoRR/Abhinara-1_Internship.git
 ```
 - **Second**: Run the following command to change the working directory.
-```
+```bash
 cd <path/to/repo> # Replace the path to the actual path of the cloned repository
 ```
