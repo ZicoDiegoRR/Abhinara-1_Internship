@@ -1,4 +1,4 @@
-# Object-Oriented Programming Task: Simple Hunting Games with C++
+# Object-Oriented Programming Task: Simple Hunting Game with C++
 A functional text-based game leveraging C++'s OOP features, such as classes, objects, attributes, methods, constructors, setters and getters, encapsulation, inheritance,
 overriding, access modifier, abstraction, and polymorphism. You must hunt the animals and upgrade your rifle through the shop. Have fun!
 
