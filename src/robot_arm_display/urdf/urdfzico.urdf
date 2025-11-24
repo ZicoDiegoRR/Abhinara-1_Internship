@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdfzico">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1.10519833814517" />
+      <inertia
+        ixx="0.0301945356303274"
+        ixy="-6.27659071217869E-21"
+        ixz="8.7439328077221E-19"
+        iyy="0.0312805139829644"
+        iyz="6.61744490042422E-21"
+        izz="0.00112511885724296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.1325 0 0"
+        rpy="1.5708 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Prismatic">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.284396751661434" />
+      <inertia
+        ixx="0.000360333437985384"
+        ixy="1.48677705313527E-06"
+        ixz="1.89051483101399E-11"
+        iyy="0.000603220238754011"
+        iyz="-1.67712014193699E-12"
+        izz="0.000339242813612446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/Prismatic.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/Prismatic.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1.1_prismatic"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.0368"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Prismatic" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="1">
+    <inertial>
+      <origin
+        xyz="-2.83536397881062E-05 -0.0083947374130732 0.0177101930027231"
+        rpy="0 0 0" />
+      <mass
+        value="0.0816249258869416" />
+      <inertia
+        ixx="4.58229127795834E-05"
+        ixy="-4.07484815591778E-07"
+        ixz="2.13260200310599E-07"
+        iyy="5.05996034856562E-05"
+        iyz="3.81698493052807E-06"
+        izz="5.05662514014459E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1.1"
+    type="revolute">
+    <origin
+      xyz="0.00175799873383092 0.0733999999999983 0"
+      rpy="-1.5707963267949 -1.6227963267949 0" />
+    <parent
+      link="Prismatic" />
+    <child
+      link="1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14159"
+      effort="0.98067"
+      velocity="1.6" />
+  </joint>
+  <link
+    name="2">
+    <inertial>
+      <origin
+        xyz="0.0594731957904817 -0.000254322338140434 -0.01102998324759"
+        rpy="0 0 0" />
+      <mass
+        value="0.0571970346449202" />
+      <inertia
+        ixx="9.89323668397052E-06"
+        ixy="3.16841669327108E-07"
+        ixz="3.93404522220625E-06"
+        iyy="8.45823182863725E-05"
+        iyz="-1.54212873938323E-08"
+        izz="9.03751669381357E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1.2"
+    type="revolute">
+    <origin
+      xyz="-0.00111515986057488 0.00606701711401303 0.039825"
+      rpy="1.5707963267949 0 3.14159" />
+    <parent
+      link="1" />
+    <child
+      link="2" />
+    <axis
+      xyz="0.0487303131024854 0 0.998811972587901" />
+    <limit
+      lower="0"
+      upper="3.14159"
+      effort="0.98067"
+      velocity="1.6" />
+  </joint>
+  <link
+    name="3">
+    <inertial>
+      <origin
+        xyz="0.0467156192832037 -0.000606915695121668 0.0139514456937673"
+        rpy="0 0 0" />
+      <mass
+        value="0.10186998650929" />
+      <inertia
+        ixx="1.74337399051014E-05"
+        ixy="6.19485255414063E-07"
+        ixz="2.43592885228709E-06"
+        iyy="6.42950415248959E-05"
+        iyz="-3.02236156388437E-08"
+        izz="6.72434667811931E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1.3"
+    type="revolute">
+    <origin
+      xyz="0.119734531241755 -0.000509344376421139 -0.00834461482774887"
+      rpy="0 0 0" />
+    <parent
+      link="2" />
+    <child
+      link="3" />
+    <axis
+      xyz="0.0487303131024851 0 0.998811972587901" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0.98067"
+      velocity="1.6" />
+  </joint>
+  <link
+    name="4">
+    <inertial>
+      <origin
+        xyz="0.0607583163934725 -0.00171220223208213 0.00257986406082863"
+        rpy="0 0 0" />
+      <mass
+        value="0.0306921200307538" />
+      <inertia
+        ixx="1.31046272212218E-05"
+        ixy="1.65110098771937E-06"
+        ixz="3.39811186824706E-07"
+        iyy="2.06356256679673E-05"
+        iyz="-1.94278600602882E-07"
+        izz="1.52525901506731E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1.4"
+    type="revolute">
+    <origin
+      xyz="0.0917255549079307 -0.00121217002670104 -0.00447513158916335"
+      rpy="0 0 0" />
+    <parent
+      link="3" />
+    <child
+      link="4" />
+    <axis
+      xyz="0.0487303131024849 0 0.998811972587901" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0.98067"
+      velocity="1.6" />
+  </joint>
+  <link
+    name="Lengan 1">
+    <inertial>
+      <origin
+        xyz="0.0280182339281564 0.0190630354360894 0.0089285166659078"
+        rpy="0 0 0" />
+      <mass
+        value="0.00958270891875863" />
+      <inertia
+        ixx="3.65176904257716E-06"
+        ixy="-4.5080521517862E-06"
+        ixz="-3.02444853053999E-07"
+        iyy="7.71421537023284E-06"
+        iyz="-1.78200506567569E-07"
+        izz="1.13023384483623E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/Lengan 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/Lengan 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1"
+    type="revolute">
+    <origin
+      xyz="0.085936 -0.011916 0.016999"
+      rpy="1.5708 0.5564 0" />
+    <parent
+      link="4" />
+    <child
+      link="Lengan 1" />
+    <axis
+      xyz="-0.040078 -0.0020784 0.99919" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0.21575"
+      velocity="0.1" />
+  </joint>
+  <link
+    name="Lengan 2">
+    <inertial>
+      <origin
+        xyz="0.0283578895175302 0.0234802884120538 -0.00765517213667749"
+        rpy="0 0 0" />
+      <mass
+        value="0.00958270891875864" />
+      <inertia
+        ixx="3.63983444437337E-06"
+        ixy="-4.51151276159005E-06"
+        ixz="2.36510312100273E-08"
+        iyy="7.71429931498142E-06"
+        iyz="1.75794199000535E-08"
+        izz="1.13141891018175E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/Lengan 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfzico/meshes/Lengan 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2"
+    type="revolute">
+    <origin
+      xyz="0.0842053287592729 -0.0119162026509208 -0.018375182255559"
+      rpy="-1.57275164355665 0.0487104219205722 -0.040136015131031" />
+    <parent
+      link="4" />
+    <child
+      link="Lengan 2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.5708"
+      effort="0.21575"
+      velocity="0.1" />
+  </joint>
+</robot>
